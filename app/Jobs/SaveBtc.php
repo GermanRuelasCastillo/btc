@@ -8,6 +8,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Log;
 
 class SaveBtc implements ShouldQueue
 {
@@ -21,6 +22,7 @@ class SaveBtc implements ShouldQueue
      */
     public function __construct($btc)
     {
+        Log::notice($btc);
         $this->btc = $btc;
     }
 
@@ -31,6 +33,9 @@ class SaveBtc implements ShouldQueue
      */
     public function handle()
     {
+
+        Log::notice($this->btc["btc"]["USD"]);
+
         Btc::create([
             'usd' => $this->btc["btc"]["USD"],
             'clp' => $this->btc["btc"]["CLP"],

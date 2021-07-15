@@ -17,7 +17,7 @@ class BtcController extends Controller
         $source = file_get_contents('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,PEN,CLP&api_key=c057f471d538a86543a09c5f8914cacc1527bd509534b9d088dbfd3d6f0db82f');
         $btc = json_decode($source,true);
         if($request->ajax()){
-            // SaveBtc::dispatch($btc);
+            SaveBtc::dispatch($btc);
             return response()->json([
                 'btc' => $btc
             ]);
