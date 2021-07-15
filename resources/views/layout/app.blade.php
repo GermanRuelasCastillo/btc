@@ -13,7 +13,6 @@
         <title>Valor del Bitcoin</title>
 
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/et-lineicon.css" />
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700' rel='stylesheet' type='text/css'>
@@ -35,5 +34,8 @@
         <script src="js/animated.js"></script>
         <script src="js/main.js"></script>
         <script src="js/custom.js"></script>
+        @if( Request::is('vue'))
+            <script src="{{ asset('js/app.js') }}" defer></script>
+        @endif
 	</body>
 </html>

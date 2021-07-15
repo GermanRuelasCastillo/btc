@@ -19,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', 'BtcController@index');
+Route::get('vue', 'BtcController@vue');

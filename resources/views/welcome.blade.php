@@ -43,22 +43,22 @@
             <div class="row text-center">
                 <div class="col-lg-4 col-md-4">
                     <div class="features-box">
-                        <div class="open-overlay"><i class="icon-lightbulb"></i></div>
-                        <h4>Jquery</h4>
+                        <div class="open-overlay"><img src="images/logos/js.png" height="30"></div>
+                        <h4><a href="/" class="redirect">Jquery</a></h4>
                         <p>Vista basada en Jquery</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="features-box">
-                        <div class="open-overlay"><i class="icon-ribbon"></i></div>
-                        <h4>Vue</h4>
+                        <div class="open-overlay"><img src="images/logos/vue.png" height="30"></div>
+                        <h4><a href="vue" class="redirect">Vue</a></h4>
                         <p>Vista basada en Vue</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="features-box">
-                        <div class="open-overlay"><i class="icon-circle-compass"></i></div>
-                        <h4>React</h4>
+                        <div class="open-overlay"><img src="images/logos/react.png" height="30"></div>
+                        <h4><a class="redirect">React</a></h4>
                         <p>Vista basada en React</p>
                     </div>
                 </div>
