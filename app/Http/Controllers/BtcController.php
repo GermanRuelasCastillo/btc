@@ -14,10 +14,9 @@ class BtcController extends Controller
      */
     public function index(Request $request)
     {
-        $tipo = $request->filled('tipo') ? $request->tipo : 'Html';
         $btc = $this->btc();
         if($request->ajax()){
-            dispatch(new SaveBtc($btc));
+            // dispatch(new SaveBtc($btc));
             return response()->json([
                 'btc' => $btc
             ]);
@@ -27,9 +26,9 @@ class BtcController extends Controller
 
     public function vue(Request $request)
     {
-        $btc = $this->btc;
-        if($request->ajax()){
-            dispatch(new SaveBtc($btc));
+        $btc = $this->btc();
+        if($request->ajax() || $request->wantsJson()){
+            // dispatch(new SaveBtc($btc));
             return response()->json([
                 'btc' => $btc
             ]);

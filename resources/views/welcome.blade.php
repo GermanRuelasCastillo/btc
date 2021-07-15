@@ -38,31 +38,5 @@
             </div> <!-- LARGE HEADER -->
         </div> <!-- END CONTENT -->
     </section>
-    <section class="features parallax" data-stellar-background-ratio="0.7" id="features">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-4 col-md-4">
-                    <div class="features-box">
-                        <div class="open-overlay"><img src="images/logos/js.png" height="30"></div>
-                        <h4><a href="/" class="redirect">Jquery</a></h4>
-                        <p>Vista basada en Jquery</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="features-box">
-                        <div class="open-overlay"><img src="images/logos/vue.png" height="30"></div>
-                        <h4><a href="vue" class="redirect">Vue</a></h4>
-                        <p>Vista basada en Vue</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="features-box">
-                        <div class="open-overlay"><img src="images/logos/react.png" height="30"></div>
-                        <h4><a class="redirect">React</a></h4>
-                        <p>Vista basada en React</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('layout.features')
 @endsection

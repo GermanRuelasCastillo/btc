@@ -16,7 +16,9 @@
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700' rel='stylesheet' type='text/css'>
-
+        @if( Request::is('vue'))
+            <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        @endif
 	</head>
 	<body>
 
@@ -33,7 +35,10 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/animated.js"></script>
         <script src="js/main.js"></script>
+        @if( Request::is('/'))
         <script src="js/custom.js"></script>
+        @endif
+
         @if( Request::is('vue'))
             <script src="{{ asset('js/app.js') }}" defer></script>
         @endif
