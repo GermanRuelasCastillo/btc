@@ -20,10 +20,6 @@
         largeHeader = document.getElementById('large-header');
         largeHeader.style.height = height+'px';
 
-        canvas = document.getElementById('demo-canvas');
-        canvas.width = width;
-        canvas.height = height;
-        ctx = canvas.getContext('2d');
 
         // create particles
         circles = [];
@@ -49,17 +45,11 @@
         width = window.innerWidth;
         height = window.innerHeight;
         largeHeader.style.height = height+'px';
-        canvas.width = width;
-        canvas.height = height;
+
     }
 
     function animate() {
-        if(animateHeader) {
-            ctx.clearRect(0,0,width,height);
-            for(var i in circles) {
-                circles[i].draw();
-            }
-        }
+
         requestAnimationFrame(animate);
     }
 

@@ -14,7 +14,7 @@
                         <!-- Estados Unidos -->
                         <div class="col-md-4 dash-glob" data-scroll-reveal="enter bottom move 25px, after 0.3s">
                             <div class="dash days_dash">
-                                <div class="digit usd">${{ number_format($btc["USD"],2) }}</div>
+                                <div class="digit usd">${{ number_format($btc["USD"],2) }}<i class="icon-arrow"></i></div>
                                 <div class="digit"><img src="images/flags/united-states.png" alt="United States BTC" width="50"></div>
                             </div>
                         </div>
@@ -44,22 +44,22 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="features-box">
                         <div class="open-overlay"><i class="icon-lightbulb"></i></div>
-                        <h4>High Quality</h4>
-                        <p>Nullam posuere, libero dolor molestie mi, vitae rutrum odio urna non dui.Nullam posuere, libero dolor molestieabd mi, vitae.</p>
+                        <h4>Jquery</h4>
+                        <p>Vista basada en Jquery</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="features-box">
                         <div class="open-overlay"><i class="icon-ribbon"></i></div>
-                        <h4>Great Features</h4>
-                        <p>Nullam posuere, libero dolor molestie mi, vitae rutrum odio urna non dui.Nullam posuere, libero dolor molestieabd mi, vitae.</p>
+                        <h4>Vue</h4>
+                        <p>Vista basada en Vue</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="features-box">
                         <div class="open-overlay"><i class="icon-circle-compass"></i></div>
-                        <h4>Customer Services</h4>
-                        <p>Nullam posuere, libero dolor molestie mi, vitae rutrum odio urna non dui.Nullam posuere, libero dolor molestieabd mi, vitae.</p>
+                        <h4>React</h4>
+                        <p>Vista basada en React</p>
                     </div>
                 </div>
             </div>

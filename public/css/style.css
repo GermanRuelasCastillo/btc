@@ -212,3 +212,13 @@ div.open-overlay {
         padding-top: 50px;
     }
 }
+
+.percent{
+    font-size: 16px;
+}
+.green{
+    color: green;
+}
+.red{
+    color:red;
+}

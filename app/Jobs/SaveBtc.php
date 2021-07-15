@@ -32,8 +32,6 @@ class SaveBtc implements ShouldQueue
      */
     public function handle()
     {
-
-
         Btc::create([
             'usd' => $this->btc["USD"],
             'clp' => $this->btc["CLP"],
