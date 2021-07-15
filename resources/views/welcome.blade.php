@@ -1,0 +1,68 @@
+@extends('layout.app')
+@section('content')
+    <section id="home">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <div id="countdown_dashboard" class="home-main container">
+                    <div class="row">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="logo">
+                            <p>El valor del Bitcoin es:</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Estados Unidos -->
+                        <div class="col-md-4 dash-glob" data-scroll-reveal="enter bottom move 25px, after 0.3s">
+                            <div class="dash days_dash">
+                                <div class="digit usd">${{ number_format($btc["USD"],2) }}</div>
+                                <div class="digit"><img src="images/flags/united-states.png" alt="United States BTC" width="50"></div>
+                            </div>
+                        </div>
+
+                        <!-- Chile -->
+                        <div class="col-md-4 dash-glob" data-scroll-reveal="enter bottom move 25px, after 0.3s">
+                            <div class="dash minutes_dash">
+                                <div class="digit clp">${{ number_format($btc["CLP"],2) }}</div>
+                                <div class="digit"><img src="images/flags/chile.png" alt="United States BTC" width="50"></div>
+                            </div>
+                        </div>
+                        <!-- Perú -->
+                        <div class="col-md-4 dash-glob" data-scroll-reveal="enter bottom move 25px, after 0.3s">
+                            <div class="dash seconds_dash">
+                                <div class="digit pen">S/{{ number_format($btc["PEN"],2) }}</div>
+                                <div class="digit"><img src="images/flags/peru.png" alt="United States BTC" width="50"></div>
+                            </div>
+                        </div>
+                    </div> <!-- END ROW -->
+                </div> <!-- END COUNTDOWN -->
+            </div> <!-- LARGE HEADER -->
+        </div> <!-- END CONTENT -->
+    </section>
+    <section class="features parallax" data-stellar-background-ratio="0.7" id="features">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-4">
+                    <div class="features-box">
+                        <div class="open-overlay"><i class="icon-lightbulb"></i></div>
+                        <h4>High Quality</h4>
+                        <p>Nullam posuere, libero dolor molestie mi, vitae rutrum odio urna non dui.Nullam posuere, libero dolor molestieabd mi, vitae.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="features-box">
+                        <div class="open-overlay"><i class="icon-ribbon"></i></div>
+                        <h4>Great Features</h4>
+                        <p>Nullam posuere, libero dolor molestie mi, vitae rutrum odio urna non dui.Nullam posuere, libero dolor molestieabd mi, vitae.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="features-box">
+                        <div class="open-overlay"><i class="icon-circle-compass"></i></div>
+                        <h4>Customer Services</h4>
+                        <p>Nullam posuere, libero dolor molestie mi, vitae rutrum odio urna non dui.Nullam posuere, libero dolor molestieabd mi, vitae.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection

@@ -1,0 +1,214 @@
+ /*
+	Indus by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+/* ==============================================
+1.GENERAL
+=============================================== */
+body{
+	overflow-x: hidden;
+	overflow-y: auto;
+    font-family: 'Roboto', sans-serif;
+}
+.margin-t-50{
+    margin-top: 50px;
+}
+.btn-custom{
+    background-color: #000;
+    color: #fff;
+    border-radius: 3px;
+}
+.btn-custom:hover,.btn-custom:active,.btn-custom:focus{
+    background-color: #3A3939;
+    color: #fff;
+    outline: none;
+}
+.parallax {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.animationload {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff;
+    z-index:999999;
+}
+.loader {
+    width:200px;
+    height:200px;
+    font-size:0;
+    position:absolute;
+    left:50%;
+    top:50%;
+    background-image:url(../images/loader.gif);
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px;
+}
+/* -----------------------------------------------------------------------
+   2. HOME / Countdown styles
+------------------------------------------------------------------------- */
+.logo{
+    padding-bottom: 5%;
+}
+.logo p{
+    color: #ffffff;
+    padding-top: 20px;
+    font-style: italic;
+}
+#home .large-header {
+	background-image: url("../images/pattern.png"),url('../images/img-1.jpg');
+	background-position: center ;
+    background-size: cover;
+}
+.home-main {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+#countdown_dashboard {
+	display: block;
+	margin: 0px auto;
+	overflow: hidden;
+    width:90% !important;
+}
+.dash {
+	padding-bottom: 10px;
+	position: relative;
+	opacity: 1;
+}
+.dash_title {
+	font-size: 16px;
+	width: 100%;
+	color: #bbbbbb;
+	display: block;
+	clear: both;
+}
+.digit {
+	color: #f9f9f9;
+	font-size: 60px;
+	font-weight: 300;
+	overflow: hidden;
+	text-align: center;
+	height: 110px;
+	line-height: 110px;
+	position: relative;
+	vertical-align: middle;
+}
+@media(max-height:360px) {
+    .digit {
+        font-size: 30px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+@media(max-width:560px) {
+    #countdown_dashboard{
+        min-width: 300px;
+    }
+    .digit{
+        font-size: 30px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+@media(min-width:560px) and (max-width: 1024px){
+    .digit{
+        font-size: 40px;
+        height: 80px;
+        line-height: 80px;
+    }
+}
+
+/* -----------------------------------------------------------------------
+   4. Features styles
+------------------------------------------------------------------------- */
+.features{
+    padding: 120px 0px 100px 0px;
+}
+.features h4{
+    color: #fff;
+}
+#features{
+    background:url("../images/pattern.png"),url("../images/img-2.jpg");
+}
+div.open-overlay {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    -webkit-transition: all .6s ease 0s;
+    -moz-transition: all .6s ease 0s;
+    transition: all .6s ease 0s;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    text-align: center;
+    color: #fff;
+    border: solid 3px #fff;
+    border-radius: 3px;
+}
+.open-overlay {
+    font-size: 28px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    margin-top: -60px;
+    margin-left: -30px;
+}
+.open-overlay i {
+    font-size: 32px;
+    line-height: 70px;
+    z-index: 2;
+    margin: 0 auto;
+    cursor: inherit;
+    -webkit-transition: all .6s ease 0s;
+    -moz-transition: all .6s ease 0s;
+    transition: all .6s ease 0s;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    color: inherit;
+    background: rgba(255,255,255,.0);
+}
+.features-box:hover .open-overlay {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+    background: rgba(255,255,255,1);
+}
+.features-box:hover .open-overlay i {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+    color: #444;
+    font-weight: bold;
+}
+.features-box h4{
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+.features-box p{
+    color: #bbbbbb;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+@media (max-width: 1000px){
+    .features-box{
+        padding-top: 50px;
+    }
+}
