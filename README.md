@@ -15,7 +15,7 @@ El proyecto tiene las siguientes caracteristicas:
     <li> - Laravel 7.8. </li>
     <li> - Plantilla html simple. </li>
     <li> - Uso de blade para mostrar las interfases. </li>
-    <li> - Valor de bitcoin en dólares, peso chilero y sol peruano. </li>
+    <li> - Valor de bitcoin en dólares, peso chileno y sol peruano. </li>
     <li> - Uso de PostgreSQL como base de datos. </li>
     <li> - Tabla donde se registrará el valor del BTC en las distintas monedas. </li>
     <li> - Modelo y migración BTC. </li>
