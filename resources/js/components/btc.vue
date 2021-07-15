@@ -52,7 +52,6 @@ export default{
     str_clp: '0',
     str_pen: '0',
     i : 0,
-
 }),
   mounted(){
     console.log(this.btc);
