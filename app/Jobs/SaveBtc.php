@@ -22,7 +22,6 @@ class SaveBtc implements ShouldQueue
      */
     public function __construct($btc)
     {
-        Log::notice($btc);
         $this->btc = $btc;
     }
 
@@ -34,12 +33,11 @@ class SaveBtc implements ShouldQueue
     public function handle()
     {
 
-        Log::notice($this->btc["btc"]["USD"]);
 
-        // Btc::create([
-        //     'usd' => $this->btc["btc"]["USD"],
-        //     'clp' => $this->btc["btc"]["CLP"],
-        //     'pen' => $this->btc["btc"]["PEN"]
-        // ]);
+        Btc::create([
+            'usd' => $this->btc["USD"],
+            'clp' => $this->btc["CLP"],
+            'pen' => $this->btc["PEN"]
+        ]);
     }
 }
