@@ -17,7 +17,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700' rel='stylesheet' type='text/css'>
         @if( Request::is('vue'))
-            <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+            <link rel="stylesheet" href="{{ url('') }}/css/app.css">
         @endif
 	</head>
 	<body>
@@ -40,7 +40,7 @@
         @endif
 
         @if( Request::is('vue'))
-            <script src="{{ asset('js/app.js') }}" defer></script>
+            <script src="{{ url('') }}/js/app.js" defer></script>
         @endif
 	</body>
 </html>
